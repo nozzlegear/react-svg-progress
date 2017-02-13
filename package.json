@@ -1,0 +1,41 @@
+{
+  "name": "react-svg-progress",
+  "version": "1.0.4",
+  "description": "An indefinite circular progress inspired by Google's progress indicator. Based off of https://github.com/nathanhoad/react-loading-animation.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run tsc && npm run webpack",
+    "tsc": "tsc -p .",
+    "webpack": "webpack dist/index.js dist/bundled.js && webpack dist/tests/test.js dist/tests/bundled.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nozzlegear/react-win-dialog.git"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "progress",
+    "circular progress",
+    "indicator"
+  ],
+  "author": "Joshua Harms <joshua@nozzlegear.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nozzlegear/react-win-dialog/issues"
+  },
+  "homepage": "https://github.com/nozzlegear/react-win-dialog#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.7",
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "@types/node-uuid": "^0.0.28",
+    "@types/react": "^15.0.4",
+    "react-dom": "^15.4.2",
+    "typescript": "^2.1.5",
+    "utilities.styl": "^1.3.0",
+    "webpack": "^2.2.1"
+  }
+}
