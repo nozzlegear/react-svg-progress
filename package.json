@@ -1,6 +1,6 @@
 {
   "name": "react-svg-progress",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An indefinite circular progress inspired by Google's progress indicator. Based off of https://github.com/nathanhoad/react-loading-animation.",
   "main": "dist/index.js",
   "scripts": {
