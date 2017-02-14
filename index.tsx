@@ -109,7 +109,7 @@ export class Dialog extends React.Component<IProps, any>
         const animation = this.getAnimation(id, color);
 
         return (
-            <div style={{...style, display: "inline-block", margin }}>
+            <div className={`svg`} style={{...style, display: "inline-block", margin }}>
                 <style>{animation}</style>
                 <svg style={this.svg_style} viewBox="25 25 50 50">
                     <circle style={circleStyle} cx="50" cy="50" r="20" fill="none" strokeWidth={strokeWidth || 5} strokeMiterlimit="10" />
