@@ -3,6 +3,10 @@
   "version": "1.1.1",
   "description": "An indefinite circular progress inspired by Google's progress indicator. Based off of https://github.com/nathanhoad/react-loading-animation.",
   "main": "dist/index.js",
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ],
   "scripts": {
     "build": "npm run tsc && npm run webpack",
     "tsc": "tsc -p .",
