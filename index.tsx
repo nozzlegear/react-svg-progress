@@ -1,6 +1,5 @@
 import * as React from 'react';
-import * as ReactDOM from "react-dom";
-import { v4 as uuid } from "node-uuid";
+import * as ReactDOM from 'react-dom';
 
 export interface IProps {
     color?: string;
@@ -38,6 +37,20 @@ export class Dialog extends React.Component<IProps, any>
         right: 0,
         margin: 'auto'
     };
+
+    /**
+     * Creates a unique guid. Based off of https://stackoverflow.com/a/2117523.
+     */
+    private createGuid(): string {
+        const input = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx';
+
+        return input.replace(/[xy]/g, c => {
+            const r = Math.random() * 16 | 0;
+            const v = c === 'x' ? r : (r & 0x3 | 0x8);
+
+            return v.toString(16);
+        });
+    }
 
     private getCircleStyle(id: string) {
         const style = {
@@ -103,13 +116,13 @@ export class Dialog extends React.Component<IProps, any>
 
     render() {
         const { size, color, margin, strokeWidth } = this.props;
-        const id = uuid();
+        const id = this.createGuid();
         const style = this.getStyle(size);
         const circleStyle = this.getCircleStyle(id);
         const animation = this.getAnimation(id, color);
 
         return (
-            <div className={`svg react-svg-progress`} style={{...style, display: "inline-block", margin }}>
+            <div className={`svg react-svg-progress`} style={{ ...style, display: "inline-block", margin }}>
                 <style>{animation}</style>
                 <svg style={this.svg_style} viewBox="25 25 50 50">
                     <circle style={circleStyle} cx="50" cy="50" r="20" fill="none" strokeWidth={strokeWidth || 5} strokeMiterlimit="10" />

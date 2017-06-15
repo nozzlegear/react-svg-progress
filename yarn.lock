@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@types/node-uuid@^0.0.28":
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/@types/node-uuid/-/node-uuid-0.0.28.tgz#41655b5ce63b2f3374c4e826b4dd21e729058e3d"
-  dependencies:
-    "@types/node" "*"
-
-"@types/node@*":
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.5.tgz#96a0f0a618b7b606f1ec547403c00650210bfbb7"
-
 "@types/react@^15.0.4":
   version "15.0.9"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.9.tgz#b45b6174870890a7f8426cdad6935ba7af4c13f4"
@@ -1156,10 +1146,6 @@ node-pre-gyp@^0.6.29:
     semver "~5.3.0"
     tar "~2.2.1"
     tar-pack "~3.3.0"
-
-node-uuid@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.7.tgz#6da5a17668c4b3dd59623bda11cf7fa4c1f60a6f"
 
 nopt@~3.0.6:
   version "3.0.6"
