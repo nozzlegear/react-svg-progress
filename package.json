@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nozzlegear/react-win-dialog.git"
+    "url": "git+https://github.com/nozzlegear/react-svg-progress.git"
   },
   "keywords": [
     "react",
@@ -27,9 +27,9 @@
   "author": "Joshua Harms <joshua@nozzlegear.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nozzlegear/react-win-dialog/issues"
+    "url": "https://github.com/nozzlegear/react-svg-progress/issues"
   },
-  "homepage": "https://github.com/nozzlegear/react-win-dialog#readme",
+  "homepage": "https://github.com/nozzlegear/react-svg-progress#readme",
   "dependencies": {
     "react": "^15.4.2"
   },
