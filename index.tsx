@@ -92,7 +92,7 @@ function getAnimationKeyframes(id: string, color: string = `#00bcd4`): string {
 }
 
 
-export function Dialog(this: unknown, props: Props): React.ReactElement {
+export function CircularProgress(this: unknown, props: Props): React.ReactElement {
     const { size, color, margin, strokeWidth } = props;
     const id = React.useMemo(() => createUuid(), []);
     const divStyle = getContainerStyle(size);
@@ -109,4 +109,4 @@ export function Dialog(this: unknown, props: Props): React.ReactElement {
     );
 }
 
-export default Dialog;
+export default CircularProgress;
