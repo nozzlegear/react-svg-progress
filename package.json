@@ -31,11 +31,12 @@
     "url": "https://github.com/nozzlegear/react-svg-progress/issues"
   },
   "homepage": "https://github.com/nozzlegear/react-svg-progress#readme",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^19.0.8",
+    "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.7.3",
     "utilities.styl": "^1.8.1",
