@@ -1,6 +1,6 @@
 {
   "name": "@nozzlegear/react-svg-progress",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "An indefinite circular progress inspired by Google's progress indicator. Based off of https://github.com/nathanhoad/react-loading-animation.",
   "main": "dist/index.js",
   "files": [
@@ -8,7 +8,7 @@
     "dist/*.d.ts"
   ],
   "publishConfig": {
-	"access": "public"
+    "access": "public"
   },
   "scripts": {
     "build": "tsc -p . && vite build tests",
