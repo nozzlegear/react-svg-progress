@@ -1,6 +1,5 @@
-import Progress from "../";
-import * as React from "react";
-import { render } from "react-dom";
+import Progress from "../index";
+import { createRoot } from "react-dom/client";
 
 function TestHarness(props) {
     return (
@@ -25,5 +24,6 @@ function TestHarness(props) {
 }
 
 (function () {
-    render(<TestHarness />, document.getElementById("contenthost"));
+    const root = createRoot(document.getElementById("contenthost")!);
+    root.render(<TestHarness />);
 }());
