@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc -p . && vite build tests",
+    "validate": "tsc -p . --noEmit",
     "prepublishOnly": "npm run build",
     "watch": "vite build tests && vite --open --base /tests/dist tests/dist",
     "test": "echo 'Run `npm run watch` to test this package in the browser.'"
