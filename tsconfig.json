@@ -1,11 +1,16 @@
 {
     "compilerOptions": {
+        "allowJs": false,
+        "strict": true,
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "noImplicitAny": false,
-        "sourceMap": false,
+        "sourceMap": true,
         "jsx": "react-jsx",
         "outDir": "dist",
         "declaration": true
-    }
+    },
+    "exclude": ["dist"],
+    // Only build the index.tsx file
+    "files": ["index.tsx"]
 }

@@ -8,10 +8,10 @@
     "dist/*.d.ts"
   ],
   "scripts": {
-    "build": "npm run tsc && npm run webpack",
-    "tsc": "tsc -p .",
-    "webpack": "webpack dist/index.js dist/bundled.js && webpack dist/tests/test.js dist/tests/bundled.js",
-    "prepublishOnly": "npm run build"
+    "build": "tsc -p . && vite build tests",
+    "prepublishOnly": "npm run build",
+    "watch": "vite build tests && vite --open --base /tests/dist tests/dist",
+    "test": "echo 'Run `npm run watch` to test this package in the browser.'"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,6 @@
     "react-dom": "^19.0.0",
     "typescript": "^5.7.3",
     "utilities.styl": "^1.3.0",
-    "webpack": "^2.2.1"
+    "vite": "^6.0.11"
   }
 }
