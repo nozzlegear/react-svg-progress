@@ -1,56 +1,52 @@
-# react-svg-progress
+# @nozzlegear/react-svg-progress
+
 An indefinite circular progress inspired by Google's progress indicator. Based off of https://github.com/nathanhoad/react-loading-animation.
 
-![Screeshot of React SVG Progress](https://i.imgur.com/WY1n56C.gif)
+![Screeshot of React SVG Progress](./assets/react-svg-progress.gif)
 
 ## Installation
 
 With [Yarn](https://github.com/yarnpkg/yarn):
 
 ```shell
-yarn install react-svg-progress
+yarn install @nozzlegear/react-svg-progress
 ```
 
-Or from [NPM](https://npmjs.com/package/react-svg-progress):
+Or from [NPM](https://npmjs.com/package/@nozzlegear/react-svg-progress):
 
 ```shell
-npm install react-svg-progress --save
+npm install @nozzlegear/react-svg-progress --save
 ```
 
 ## Importing
 
-Import react-svg-progress via ES6 default import:
+The component can be imported like so:
 
 ```js
-import Progress from "react-svg-progress";
-```
-
-Or via Node's require:
-
-```js
-const Progress = require("react-svg-progress").default;
+import { CircularProgress } from "@nozzlegear/react-svg-progress";
+import CircularProgress from "@nozzlegear/react-svg-progress";
 ```
 
 ## Example
 
 ```js
-import Progress from "react-svg-progress";
+import CircularProgress from "@nozzlegear/react-svg-progress";
 
-render() {
+function MyComponent() {
     return (
         <div>
             <div>
                 {`40px:`}
-                <Progress size={40} strokeWidth={7} />
+                <CircularProgress size={40} strokeWidth={7} />
             </div>
             <div>
                 {`Green:`}
-                <Progress size={40} color={"green"} />
+                <CircularProgress size={40} color={"green"} />
             </div>
             <div>
                 {`In Button:`}
                 <button className={`btn blue`} >
-                    <Progress size={15} margin={"0 5px 0 0"} color={`#ffffff`} />
+                    <CircularProgress size={15} margin={"0 5px 0 0"} color={`#ffffff`} />
                     {`Button Text`}
                 </button>
             </div>
