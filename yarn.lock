@@ -349,9 +349,10 @@ typescript@^5.7.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
-utilities.styl@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/utilities.styl/-/utilities.styl-1.3.0.tgz#6d5a014ef67c03ecaac0541a1d737ce46408306e"
+utilities.styl@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/utilities.styl/-/utilities.styl-1.8.1.tgz#fe1f1deaaf62a9451398943d154f7ad2dc9a66d8"
+  integrity sha512-hfAL0ii3qiVPeEGscJiN504btdnS/iOrcc+cvtwS84QP2RBEv8DU3iEmdHD1HLt5Uhy6WEOmMjYgpSOMIdFg/Q==
 
 vite@^6.0.11:
   version "6.0.11"
